@@ -20,4 +20,4 @@ Routing for the shared folder: the cross-stage reference layer. This file contai
 - One-way references: stages read this folder; nothing here reads stage outputs.
 - Two surfaces here change routinely: `fact-registry.md` rows (via the `facts` trigger, the writer owning every status change) and the Candidate Profiles block in `audience-model.md` (appended by 01-intake, promoted or deleted by the writer). If a fact has a registry row, no other file carries its value; reference the row instead of copying it.
 - Everything else changes only at setup or by deliberate edit.
-- Placeholders here are replaced once, during `setup`. No stage should see an unresolved `{{NAME}}` placeholder at runtime -- if one appears, treat it as a setup failure and route back to onboarding.
+- Placeholders here are replaced once, during `setup`. No stage should see an unresolved double-brace placeholder at runtime -- if one appears, treat it as a setup failure and route back to onboarding.

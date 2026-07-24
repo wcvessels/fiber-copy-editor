@@ -16,6 +16,6 @@ Which stage loads which file and section is declared in that stage's `CONTEXT.md
 ## Rules
 
 - One-way references only: this folder is read by stages, and reads nothing itself.
-- Placeholders in these files are replaced once, during `setup`. No stage should see an unresolved `{{` placeholder at runtime -- if one appears, treat it as a setup failure and route back to onboarding.
+- Placeholders in these files are replaced once, during `setup`. No stage should see an unresolved double-brace placeholder at runtime -- if one appears, treat it as a setup failure and route back to onboarding.
 - Contradictions in `brand-voice.md` are not resolved here. They are carried forward as documented tension for 02 and 05 to apply, per the precedence stated in that file.
 - `brand-voice.md` sections are a fixed schema: stages load sections by name. Setup replaces content within the setup-owned sections (see the strata note at the top of that file); section names never change.

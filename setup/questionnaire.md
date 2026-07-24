@@ -3,7 +3,11 @@
 <!-- Agent instructions: Read this file when the user types "setup". Ask ALL questions
      in a single conversational pass. The user should be able to answer everything in one
      message. Collect answers. Replace placeholders across the specified files. After all
-     replacements, verify no {{PLACEHOLDER}} patterns remain in the workspace.
+     replacements, verify no unresolved double-brace placeholders remain in the workspace.
+
+     Reserved syntax: double curly braces mark a placeholder, nothing else. Elsewhere, name
+     placeholders in words -- never a brace-token -- so any double-brace token left outside
+     `setup/` is always a live one for the run-gate to catch.
 
      REQUIRED questions (marked "Required: yes" below) have no default and no skip
      path -- setup is not complete while any of them lacks an explicit answer ("none"
@@ -255,5 +259,5 @@
 4. Show the user the assembled identity block, the full `brand-voice.md`, and the fact registry table (values, sources, as-of dates -- all still status "stale" pending the writer's verification). Let them correct anything before it's written.
 5. On confirmation, replace every placeholder across all files listed above.
 6. Collapse unused multi-slot placeholders to the count actually supplied: fewer than four verticals -> delete the unused rows from identity.md's verticals table; fewer than three competitors -> the registry's Competitive set row and the failure-modes worked-example prose carry only the names given (single-name deployments collapse the example's two-name comparison to one). No slot may survive setup unresolved.
-7. Scan the entire workspace for remaining `{{NAME}}`-style placeholder patterns, excluding this questionnaire (which documents them). If any remain, ask for the missing info.
+7. Scan the entire workspace for any remaining unresolved double-brace placeholder, excluding this questionnaire (which documents them). If any remain, ask for the missing info.
 8. Tell the user: setup is complete, every piece now runs through `stages/01-intake/CONTEXT.md`, and the `facts` trigger opens the registry any time they want to verify a stale or disputed entry.
