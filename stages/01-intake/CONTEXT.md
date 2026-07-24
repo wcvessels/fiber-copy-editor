@@ -19,7 +19,7 @@ Assemble the piece brief and open the round's review sheet before the diagnostic
 
 ## Process
 
-1. Pre-flight -- setup gate: scan the workspace (every folder except `setup/`, which documents the placeholders) for unresolved `{{` placeholders. Any hit means setup is incomplete: stop -- no intake, no brief -- and route to `setup/questionnaire.md`, per the placeholder rule in `../../brand-vault/CONTEXT.md` (Rules). The editor never invents or defaults a missing specific.
+1. Pre-flight -- setup gate: scan the workspace (every folder except `setup/`, which documents the placeholders) for any unresolved double-brace placeholder. Any hit means setup is incomplete: stop -- no intake, no brief -- and route to `setup/questionnaire.md`, per the placeholder rule in `../../brand-vault/CONTEXT.md` (Rules). The editor never invents or defaults a missing specific.
 2. Identify the piece: format, goal, funnel position, and draft maturity (first pass / near-final / release candidate -- see `references/calibration-guide.md`). First-pass drafts get strategy-level scrutiny only; sentence-level diagnostics are held for later rounds.
 3. Profile the audience on the model's dimensions (temperature, technical depth, decision role, risk lens); start from a preset when one fits. When none fits, append the writer-defined profile as a candidate line in `../../shared/audience-model.md` (Candidate Profiles); if it matches an existing candidate line, append the slug there and flag the recurrence at the step-6 checkpoint. For committee purchases, identify both the champion (register target) and the signer (whose risk lens sets required proof).
 4. Apply the format preset; record the scope block: which of 02-07 run, at what calibration, with intake-judgment overrides noted. Record the Tone dial: the deployment default from the Tone Dial section of `../../shared/feedback-voice.md` unless the writer overrides it for this piece; write the setting plus its one-line gloss into the brief.
@@ -38,7 +38,7 @@ Assemble the piece brief and open the round's review sheet before the diagnostic
 
 | Check | Pass Condition |
 |-------|---------------|
-| Setup gate | No unresolved `{{` placeholder anywhere outside `setup/` at intake time |
+| Setup gate | No unresolved double-brace placeholder anywhere outside `setup/` at intake time |
 | Brief complete | Format, goal, audience profile (incl. champion + signer for committee buys), draft maturity, scope block, Tone dial, and registry reference all present |
 | Rerun context | On a rerun, the brief's Prior Round section names each prior finding and its status |
 
