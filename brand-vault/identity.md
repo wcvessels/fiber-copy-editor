@@ -34,7 +34,7 @@ Add rows as needed. Every compliance cert cited in copy (see `shared/failure-mod
 
 - **Local support / NOC model:** {{LOCAL_SUPPORT_MODEL}} -- what makes support here different from a call center (in-region technicians, response time commitment, escalation path).
 - **Regional density:** {{REGIONAL_DENSITY_DESCRIPTION}} -- the specific, ownable claim about network density in the footprint, not a generic "extensive network" line.
-- **What consolidation removes:** {{CONSOLIDATION_REMOVES}} -- the specific vendors, contracts, or failure points a single-provider model eliminates for this buyer. This is the proof the consolidation tagline needs (see `brand-voice.md` contradiction 1).
+- **What consolidation removes:** {{CONSOLIDATION_REMOVES}} -- the specific vendors, contracts, or failure points a single-provider model eliminates for this buyer. Where a consolidation tagline is brand-mandated, this is the proof it needs (see `brand-voice.md` contradiction 1).
 
 ## Competitive Set
 

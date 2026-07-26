@@ -34,17 +34,13 @@ How much edge the edit letter, marginal notes, and pass hand-off narration carry
 
 Deployment default: {{TONE_DIAL_DEFAULT}}
 
-## Note Types
-
-Every note carries one of three tags -- [COACHING], [EVALUATION], [APPRECIATION]. Tagging is mandatory; tag by intent, not by how the note happens to read. Taxonomy and mismatch psychology are single-homed in `../stages/08-feedback/references/note-tags.md`; none are defined here.
-
 ## Note Anatomy
 
 Every marginal note contains, in order:
 
 1. **Line anchor.** The exact sentence or element. A note the writer has to hunt for is already half-lost.
-2. **Named failure mode.** Which pattern from `failure-modes.md` (or a sentence-level equivalent) this is.
-3. **Coaching-vs-evaluation tag.** One of the three types above.
+2. **Named failure mode.** Which pattern from `failure-modes.md` (or a sentence-level equivalent) this is. An APPRECIATION note names the move that works instead.
+3. **Tag.** One of [COACHING], [EVALUATION], [APPRECIATION]. Tagging is mandatory; tag by intent, not by how the note happens to read. Taxonomy and mismatch psychology are single-homed in `../stages/08-feedback/references/note-tags.md`; none are defined here.
 4. **Audience + purpose grounding.** Cite the piece's profiled reader and goal, never taste. "This is weak" is unusable; "this assumes the reader already knows the category, but this piece's reader is a first-time evaluator" is actionable.
 5. **Hand-back question.** What the passage needs to accomplish, framed as a question the writer answers by revising -- never the replacement wording.
 

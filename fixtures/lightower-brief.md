@@ -46,4 +46,4 @@ Prepared setup input: direct answers (Q1–Q12), fact sheet (Q13), brand voice d
 
 ## Config
 
-Q23 HOC cap: 3 · Q24 Legal contact: Legal/Compliance team · Q25 Writer name: the person running setup · Q26 Mechanics hierarchy: keep default · Q31 Tone dial: dry
+Q23 HOC cap: 3 · Q24 Legal contact: Legal/Compliance team · Q25 Writer name: not named · Q26 Mechanics hierarchy: keep default · Q31 Tone dial: dry
