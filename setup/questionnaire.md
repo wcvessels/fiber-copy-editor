@@ -2,8 +2,8 @@
 
 <!-- Agent instructions: Read this file when the user types "setup". Ask ALL questions
      in a single conversational pass. The user should be able to answer everything in one
-     message. Collect answers. Replace placeholders across the specified files. After all
-     replacements, verify no unresolved double-brace placeholders remain in the workspace.
+     message. Collect the answers, then follow the After Onboarding procedure at the end
+     of this file.
 
      Reserved syntax: double curly braces mark a placeholder, nothing else. Elsewhere, name
      placeholders in words -- never a brace-token -- so any double-brace token left outside
@@ -23,30 +23,7 @@
      Voice-document shortcut: Q27 works the same way for brand voice -- a supplied voice
      document replaces Q28-Q30 for whatever it covers, mapped into brand-voice.md's
      setup-owned sections per the strata note at the top of that file. Anything not
-     covered keeps the shipped category default.
-
-     Two-pass review: after populating brand-vault/identity.md, brand-vault/brand-voice.md,
-     and shared/fact-registry.md from the answers below, show the user the assembled
-     identity block, the derived competitor set, and the fact registry table before writing
-     them to disk. This catches misheard names, wrong compliance pairings, and misfiled
-     source citations before they're baked in. Only proceed to replacement after the user
-     confirms or corrects. -->
-
-<!-- Questionnaire design rules:
-     1. FLAT STRUCTURE: No category groupings. Just a numbered list of questions.
-     2. ALL AT ONCE: Every question appears in one pass. The user answers in one message.
-     3. SYSTEM-LEVEL ONLY: Questions configure the production system, not a specific run.
-        Per-run details (draft, goal, audience for a single piece) are collected
-        conversationally by 01-intake at the start of each pipeline run -- not here.
-     4. DERIVE, DON'T ASK: If a field can be derived from other answers, the agent fills
-        it in without asking. List derived fields under the question they depend on.
-     5. SENSIBLE DEFAULTS WHERE ALLOWED: contextual and method questions carry a default
-        or example so the user can skip them. REQUIRED min-specifics questions (marked
-        "Required: yes") ship no default -- see the agent instructions above.
-     6. ASK ONCE, NEVER AGAIN: After setup, the user should never be asked these questions
-        again. The answers are baked into the workspace files permanently.
-     7. EXAMPLES OVER DESCRIPTIONS: For voice/style questions, ask for concrete examples
-        rather than abstract descriptions. -->
+     covered keeps the shipped category default. -->
 
 ### Q1: What's the brand name?
 - Placeholder: `{{BRAND_NAME}}`
@@ -214,7 +191,7 @@
 - Placeholder: `{{WRITER}}`
 - Files: `brand-vault/identity.md` (single home; every other file says "the writer")
 - Type: free text
-- Default: [the person running setup]
+- Default: not named
 
 ### Q26: The mechanics authority hierarchy defaults to AP Stylebook for public-facing copy, with Microsoft's guide as a supplementary authority for product/technical content and Chicago for designated long-form editorial pieces. Keep this default?
 - Type: yes/no
@@ -256,7 +233,7 @@
    - Q12 answered "no standing tagline": collapse Brand-vs-Research contradiction 1 to a one-line N/A ("No brand-mandated consolidation tagline; no tension to carry") and drop the tagline reference from the Go-To Messaging Patterns Ownership bullet.
    - Q20 answered with no NPS claim: collapse contradiction 3 to a one-line N/A and set the registry's NPS row value to "none claimed."
    - Any other Q14-Q22 fact answered "none" / "not used": set that registry row's value to "none claimed" and its source and as-of cells to "--". The row stays; the fact is explicitly unclaimed, not silently absent.
-4. Show the user the assembled identity block, the full `brand-voice.md`, and the fact registry table (values, sources, as-of dates -- all still status "stale" pending the writer's verification). Let them correct anything before it's written.
+4. Show the user the assembled identity block, the full `brand-voice.md`, and the fact registry table (values, sources, as-of dates -- all still status "stale" pending the writer's verification). This catches misheard names, wrong compliance pairings, and misfiled source citations before they are baked in. Let them correct anything before it's written; only proceed to replacement after they confirm or correct.
 5. On confirmation, replace every placeholder across all files listed above.
 6. Collapse unused multi-slot placeholders to the count actually supplied: fewer than four verticals -> delete the unused rows from identity.md's verticals table; fewer than three competitors -> the registry's Competitive set row and the failure-modes worked-example prose carry only the names given (single-name deployments collapse the example's two-name comparison to one). No slot may survive setup unresolved.
 7. Scan the entire workspace for any remaining unresolved double-brace placeholder, excluding this questionnaire (which documents them). If any remain, ask for the missing info.

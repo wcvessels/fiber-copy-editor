@@ -38,4 +38,4 @@ Prior Round appears on reruns only -- omit the section on round 1.
 - **Prior Round** (reruns only) -- each prior-round finding and its status: fixed / still-open / regressed. Written by 08 from this round's Ledger judged against the brief's Prior Round section.
 - **Marginal Notes** -- line-anchored notes for local failures, per the note anatomy in `feedback-voice.md`. Written by 08.
 - **LOC Batch** -- one consolidated sentence-mechanics cleanup note, in sentence-diagnostics vocabulary. Written by 08.
-- **Ledger** -- complete, append-only log of every finding from every pass, in run order. A format-skipped pass appends a one-line "skipped by format" note. 02-07 append; 08 triages but never edits rows. Nothing discarded.
+- **Ledger** -- complete, append-only log of every finding from every pass, in run order. A format-skipped pass appends a one-line "skipped by format" note. 02-07 append; 08 appends its own sentence-level findings and triages all rows, but never edits or removes an upstream row. Nothing discarded.

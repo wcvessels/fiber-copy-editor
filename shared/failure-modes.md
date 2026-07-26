@@ -54,7 +54,7 @@ Six recurring failure patterns in B2B fiber/telco marketing copy. Each entry giv
 
 **Weak line (appears well down the page, under generic peering copy):** "When your business is in crisis, can you really afford to rely on an overseas call center... At {{BRAND_NAME}} we have local technicians in each of our markets."
 
-**Editorial note:** "This is arguably {{BRAND_NAME}}'s strongest, hardest-to-copy differentiator -- local support and an owned regional network -- and it's parked mid-page under generic copy. Customer testimonials confirm this is what actually drives the decision. Why is it not surfaced where the reader decides? Flag as buried differentiator."
+**Editorial note:** "This is arguably the strongest, hardest-to-copy differentiator {{BRAND_NAME}} has -- local support and an owned regional network -- and it's parked mid-page under generic copy. Customer testimonials confirm this is what actually drives the decision. Why is it not surfaced where the reader decides? Flag as buried differentiator."
 
 **Why it works:** Identifies the specific asset, points to evidence (testimonials) that it drives decisions, and diagnoses a placement problem rather than rewriting the line.
 
@@ -68,9 +68,9 @@ Six recurring failure patterns in B2B fiber/telco marketing copy. Each entry giv
 
 **Weak line:** "One provider. No gaps, no finger-pointing, no vendor chaos."
 
-**Editorial note:** "This phrasing is one of the most worn tropes in B2B tech and telecom -- a category claim any competitor could make as written. What makes {{BRAND_NAME}}'s single-provider promise provable and specific -- the owned network, the one-bill model, a real proof point? Right now the differentiator is asserted, not evidenced. Flag as undifferentiated positioning."
+**Editorial note:** "This phrasing is one of the most worn tropes in B2B tech and telecom -- a category claim any competitor could make as written. What makes the single-provider promise from {{BRAND_NAME}} provable and specific -- the owned network, the one-bill model, a real proof point? Right now the differentiator is asserted, not evidenced. Flag as undifferentiated positioning."
 
-**Why it works:** Proves the phrase is generic, distinguishes assertion from evidence, and points the writer toward the brand's own provable assets without supplying replacement copy. Note: this exact phrase is brand-mandated (see `brand-voice.md` contradictions) -- the note flags it for adjacent proof, it never recommends striking it.
+**Why it works:** Proves the phrase is generic, distinguishes assertion from evidence, and points the writer toward the brand's own provable assets without supplying replacement copy. Note: if the exact phrase is brand-mandated (see `brand-voice.md` contradictions), the note flags it for adjacent proof and never recommends striking it.
 
 ---
 
