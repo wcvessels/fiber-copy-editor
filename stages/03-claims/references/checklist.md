@@ -34,6 +34,6 @@ See the V-B-F method reference in this stage for the full hierarchy and So What 
 ## Fact and Number Discipline
 
 - Are the figures on this page (route miles, location counts, customer counts, NPS or satisfaction figures, certification lists) internally consistent within the page?
-- Do these figures match the same figures elsewhere on the site or in other recently reviewed assets? If not, flag as a **registry inconsistency** and route to the proof pass (04) -- do not silently pick one number.
+- Do these figures match the same figures elsewhere on the site or in other recently reviewed assets? If not, flag as a **registry inconsistency** and route to the proof pass (04) -- do not silently pick one number. The finding is 04's to tag and count; 03 logs no Ledger row for it.
 - Is any number stated with more precision than the source actually supports (false precision), or rounded in a way that changes its meaning?
 - Is a percentage or comparative statistic (an NPS comparison, a percent-better line) given without an absolute baseline, source, or date? Flag as unverifiable and query the writer for the missing anchor.
