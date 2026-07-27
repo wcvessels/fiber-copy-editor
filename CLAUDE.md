@@ -13,7 +13,7 @@ fiber-copy-editor/
 ├── fixtures/                 (Ignore this folder UNLESS explicitly instructed by the writer)
 ├── shared/                   (cross-stage editorial method -- inventory in shared/CONTEXT.md)
 ├── brand-vault/              (brand instance data -- inventory in brand-vault/CONTEXT.md)
-├── pieces/                   (the product -- one folder per piece: brief + dated review sheets `r[N]-review.md`)
+├── pieces/                   (the product -- one folder per piece: brief + round-numbered review sheets `r[N]-review.md`)
 └── stages/                   (diagnostic pipeline)
     ├── 01-intake/
     ├── 02-audience-fit/
