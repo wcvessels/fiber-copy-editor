@@ -8,6 +8,7 @@ One pipeline; presets toggle which of passes 02-07 run and at what calibration. 
 |---|---|---|---|---|---|---|
 | Product / vertical page | full | full | full | full | full | full |
 | Cold display / social ad | full | full | light | full | skip | full |
+| Organic social post | full | full | full | full | light | full |
 | Email | full + subject line | full | full | full | full | full + subject line |
 | Blog / thought leadership | full | full | full | light | full | soft-cta |
 | Press release | full | full | strictest | light | full | skip |
@@ -27,6 +28,8 @@ One pipeline; presets toggle which of passes 02-07 run and at what calibration. 
 **Product / vertical page.** The default, highest-scrutiny format -- it is usually the piece a champion forwards to a signer. Every pass runs full. The audience profile should almost always include both champion and signer.
 
 **Cold display / social ad.** No signer exists yet at this temperature; audience-fit judges register and stakes-before-proof, not decision-role fit. 04-proof runs light because ad copy rarely carries enough claims to need deep fact-checking; 05-differentiation stays full because a generic ad is wasted spend. 06-structure is skipped -- there is no room for stakes-proof-offer sequencing in ad-length copy.
+
+**Organic social post.** An unpaid post from the company's own page (LinkedIn and peers) -- not the ad row: no paid placement, an expandable body behind the feed's fold, and room for real claims. 04-proof runs full because event logistics, dates, and figures are checkable at this length; 06-structure runs light -- judge the pre-fold line and the ordering, not the full stakes-proof-offer arc.
 
 **Email.** Full scrutiny across the board, plus the subject line gets its own audience-fit and cta check -- a subject line that misreads the audience kills the piece before the body copy matters.
 
