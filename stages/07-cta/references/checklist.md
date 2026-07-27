@@ -33,4 +33,5 @@ The editor diagnoses CTA mismatch. It never writes the replacement button copy o
 
 ## Destination Correlation
 
+- Does a destination exist at all? A CTA naming an action the piece gives the reader no way to take (no link, no landing page, no stated channel) is an automatic flag.
 - Does the CTA's destination match what the CTA copy promised (a "See pricing" button that leads to a contact form, a "Talk to an expert" button that leads to a generic newsletter signup)? Flag any mismatch between promise and destination.
