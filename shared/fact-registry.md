@@ -14,6 +14,8 @@ Every entry has a status: **verified**, **stale**, or **disputed**.
 - **stale** -- seeded but not yet confirmed, or confirmed too long ago to trust without a recheck.
 - **disputed** -- two sources disagree and neither has been resolved.
 
+Setup seeds every row stale, so on a fresh deployment no claim can fail outright and the promotion rule below cannot fire -- both wake the first time the writer verifies a row via the `facts` trigger.
+
 **The rule that matters:** when 04-proof encounters a draft claim that matches a stale or disputed registry entry, the finding is not "this is correct" or "this is wrong" -- it is a query. The pass flags the claim and asks the writer to verify the registry entry, rather than asserting the draft is either right or wrong. Stale entries become queries, not assertions. Only a verified entry can be used to fail a draft claim outright.
 
 **Promotion to HOC:** a draft claim that contradicts the registry outright (a different number for the same fact, with no stale/disputed excuse) is a factual self-contradiction and promotes automatically -- see `failure-modes.md`.

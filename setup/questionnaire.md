@@ -17,7 +17,9 @@
      Fact-sheet shortcut: Q13 lets the user point to a prepared fact sheet instead of
      answering Q14-Q22 one at a time. If they do, extract each fact's value, source, and
      as-of date from that document. Any fact the sheet doesn't cover, ask for individually
-     using the corresponding question below. Every registry row keeps its "stale" status
+     using the corresponding question below. If any facts are supplied not otherwise
+     covered by a question, each gets its own registry row (status stale) -- setup
+     never discards a supplied fact. Every registry row keeps its "stale" status
      regardless of source -- onboarding fills the registry, it does not verify it.
 
      Voice-document shortcut: Q27 works the same way for brand voice -- a supplied voice
@@ -228,6 +230,7 @@
 ## After Onboarding
 
 1. Assemble the answers into `brand-vault/identity.md`, `brand-vault/brand-voice.md`, and `shared/fact-registry.md`.
+   Registry coverage: every discrete, checkable number arriving inside a prose answer (Q8 support model, Q9 density claim) or the Q27 voice document (an availability figure, a staff percentage) gets its own registry row -- value, source, and as-of from the answer where supplied; otherwise source "setup questionnaire (Qn)" and the setup date. The vault prose keeps the number; the registry row is the one 04-proof checks against.
 2. Voice mapping (Q27-Q30): replace content within the setup-owned sections of `brand-vault/brand-voice.md` only, per the strata note at the top of that file. Any section the answers don't cover keeps its shipped category default. Preserve the register-default line in Core Voice (it defers to the audience model). Never rename, remove, or reorder sections -- stages load them by name.
 3. Conditionals in the method-invariant sections:
    - Q12 answered "no standing tagline": collapse Brand-vs-Research contradiction 1 to a one-line N/A ("No brand-mandated consolidation tagline; no tension to carry") and drop the tagline reference from the Go-To Messaging Patterns Ownership bullet.
