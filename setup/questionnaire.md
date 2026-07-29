@@ -9,6 +9,10 @@
      placeholders in words -- never a brace-token -- so any double-brace token left outside
      `setup/` is always a live one for the run-gate to catch.
 
+     Substitution replaces the double-brace token only; every word around it is permanent
+     file content. Fill-in guidance lives in this questionnaire's questions, never beside
+     a placeholder.
+
      REQUIRED questions (marked "Required: yes" below) have no default and no skip
      path -- setup is not complete while any of them lacks an explicit answer ("none"
      counts only where the question documents a none path). Never invent, genericize,
